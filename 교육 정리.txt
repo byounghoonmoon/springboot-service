@@ -1,0 +1,45 @@
+1일차 
+
+Amazon 콘솔 
+	사이트: https://us-east-1.signin.aws.amazon.com/oauth?SignatureVersion=4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJMOATPLHVSJ563XQ&X-Amz-Date=2020-06-23T00%3A44%3A01.692Z&X-Amz-Signature=b72fbbb7c20bcf9e2580d95ca30f4fc5c43355efeb62dcfa023d049b39ff8a51&X-Amz-SignedHeaders=host&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&code_challenge=S-FyUzyyAJTexjjjy7bgGJx5aXXbHZjjAVSHaGNsc0Q&code_challenge_method=SHA-256&redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&response_type=code&state=hashArgs%23
+	아이디 : admin14
+	Region : ap-southeast-1
+	비밀번호 : skcc1234!
+
+GitHub 주소 
+	https://github.com/event-storming/container-orchestration
+
+교육 정리 된곳 
+	https://workflowy.com/s/msa/27a0ioMCzlpV04Ib
+
+Ubuntu 18.4 
+	skccadmin / skcc1234!
+	/etc/apt/sources.list
+	apt server를 daum kakao로 변경
+	sudo apt-get remove --purge docker-ce 제거
+
+Docker 
+	계정 : passionbh
+	비밀번호 : metlife00!
+	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add
+	
+	Dockerfile 
+	1) FROM : 이미지를 생성할 때 사용할 기반 이미지를 지정
+	2) RUN :  이미지를 생성할 때 실행할 코드 지정. 
+	3) WORKDIR : 작업 디렉토리 지정. 해당 디렉토리 없을 경우 새로 생성.
+	4) COPY : 파일이나 폴더를 이미지에 복사. WORKDIR로 지정한 디렉토리 기준으로 복사 
+	5) ENV : 
+	6) ENTRYPOINT : 컨테이너를 구동할 때 실행할 명령어 
+	
+	docker run --name my-nginx -d -p 80:80 nginx
+	컨테이너 실행
+	--name 컨테이너 명
+	-d : 데몬
+	-p xx:xx  : 포트포워딩 설정
+	nginx : 이미지 명
+	
+	Docker Image : 이미지 안에는 모든것이 들어가 있음.
+	Docker Container : 이미지가 실행된 것 
+	
+	
+	
